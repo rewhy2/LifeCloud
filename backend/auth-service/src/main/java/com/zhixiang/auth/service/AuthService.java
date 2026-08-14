@@ -9,8 +9,8 @@ import com.zhixiang.common.JwtUtil;
 import com.zhixiang.common.LoginUser;
 import com.zhixiang.common.Result;
 import com.zhixiang.common.UserContext;
+import com.zhixiang.common.security.PasswordEncoderUtil;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
 
 @Service
 public class AuthService {
@@ -28,9 +28,12 @@ public class AuthService {
         if (user == null) {
             return Result.error("用户不存在");
         }
-        String md5 = DigestUtils.md5DigestAsHex(req.getPassword().getBytes());
-        if (!md5.equals(user.getPassword())) {
+        if (!PasswordEncoderUtil.matches(req.getPassword(), user.getPassword())) {
             return Result.error("密码错误");
+        }
+        // 存量 MD5 密码兼容迁移：校验通过后用 BCrypt 重新加密写回
+        if (PasswordEncoderUtil.isLegacyMd5(user.getPassword())) {
+            userMapper.updatePassword(user.getId(), PasswordEncoderUtil.encode(req.getPassword()));
         }
         String token = jwtUtil.generateToken(user.getUsername(), user.getRole(), user.getId());
         LoginResponse resp = new LoginResponse(token, user.getUsername(), user.getNickName(), user.getRole());
@@ -48,7 +51,7 @@ public class AuthService {
         }
         User user = new User();
         user.setUsername(req.getUsername());
-        user.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        user.setPassword(PasswordEncoderUtil.encode(req.getPassword()));
         user.setNickName(req.getNickName() == null || req.getNickName().isBlank() ? "顾客" : req.getNickName());
         user.setRole("USER");
         user.setStatus(1);
