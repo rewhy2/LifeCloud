@@ -25,35 +25,19 @@ public class WebConfig implements WebMvcConfigurer {
 
     private final JwtInterceptor jwtInterceptor;
     private final RoleInterceptor roleInterceptor;
+    private final JwtProperties jwtProperties;
 
-    public WebConfig(JwtInterceptor jwtInterceptor, RoleInterceptor roleInterceptor) {
+    public WebConfig(JwtInterceptor jwtInterceptor, RoleInterceptor roleInterceptor, JwtProperties jwtProperties) {
         this.jwtInterceptor = jwtInterceptor;
         this.roleInterceptor = roleInterceptor;
+        this.jwtProperties = jwtProperties;
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor)
                 .addPathPatterns("/**")
-                .excludePathPatterns(
-                        "/auth/login",
-                        "/auth/register",
-                        "/auth/health",
-                        "/api/auth/login",
-                        "/api/auth/register",
-                        "/api/auth/health",
-                        "/products/public",
-                        "/categories/public",
-                        "/api/products/public",
-                        "/api/categories/public",
-                        "/",
-                        "/index.html",
-                        "/user.html",
-                        "/css/**",
-                        "/js/**",
-                        "/images/**",
-                        "/favicon.ico",
-                        "/*.html");
+                .excludePathPatterns(jwtProperties.getExcludePaths());
         registry.addInterceptor(roleInterceptor)
                 .addPathPatterns("/**");
     }
