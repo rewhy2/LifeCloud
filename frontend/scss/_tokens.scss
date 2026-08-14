@@ -1,0 +1,62 @@
+// ============================================================
+// 设计令牌 (Design Tokens) —— 餐饮 SaaS 设计系统 v2
+// 编译产物见 css/app.css（同源）
+// ============================================================
+
+:root {
+  // 品牌色
+  --brand-50:  #fff4ed;
+  --brand-100: #ffe4d3;
+  --brand-200: #ffc6a8;
+  --brand-300: #ffa070;
+  --brand-400: #ff7a3c;
+  --brand-500: #ff5a1f;
+  --brand-600: #ed4410;
+  --brand-700: #c4350c;
+
+  // 中性色
+  --ink-900: #1a1d24;
+  --ink-800: #2a2f3a;
+  --ink-700: #3d4452;
+  --ink-600: #5b6472;
+  --ink-500: #7b8494;
+  --ink-400: #9aa3b2;
+  --ink-300: #c3cad6;
+  --ink-200: #e4e8ef;
+  --ink-100: #eef1f6;
+  --ink-50:  #f7f9fc;
+
+  // 语义色
+  --ok:    #1bbf83;
+  --ok-bg: #e6f8f0;
+  --warn:  #f5a623;
+  --warn-bg:#fdf2dc;
+  --danger:#ef4756;
+  --danger-bg:#fde8ea;
+  --info:  #3b82f6;
+  --info-bg:#e8f1fe;
+
+  // 面
+  --bg:        #f4f6fb;
+  --surface:   #ffffff;
+  --surface-2: #fbfcfe;
+
+  // 圆角
+  --radius-sm: 8px;
+  --radius:    12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+
+  // 阴影
+  --sh-1: 0 1px 2px rgba(26,29,36,.06), 0 1px 3px rgba(26,29,36,.04);
+  --sh-2: 0 4px 16px rgba(26,29,36,.08);
+  --sh-3: 0 12px 32px rgba(26,29,36,.12);
+  --sh-brand: 0 8px 24px rgba(255,90,31,.28);
+
+  // 尺寸
+  --sidebar-w: 248px;
+  --topbar-h: 64px;
+
+  --font: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --ease: cubic-bezier(.22,.61,.36,1);
+}

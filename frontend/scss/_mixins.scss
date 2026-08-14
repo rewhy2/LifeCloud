@@ -1,0 +1,14 @@
+// ============================================================
+// Mixins —— 复用片段
+// ============================================================
+@mixin card {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--sh-1);
+  border: 1px solid var(--ink-100);
+}
+@mixin flex-center { display: flex; align-items: center; justify-content: center; }
+@mixin ellipsis {
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+@mixin transition($t: var(--ease)) { transition: all .2s $t; }

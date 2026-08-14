@@ -1,0 +1,15 @@
+# Maven 编译产物，全部忽略
+target/
+*.class
+*.jar
+*.war
+
+# IDE 配置文件
+.idea/
+*.iml
+.vscode/
+
+# 日志、环境变量
+*.log
+.env
+logs/

@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.zhixiang:auth-service:jar:1.0.0
+[WARNING] 'dependencies.dependency.scope' for org.projectlombok:lombok:jar must be one of [provided, compile, runtime, test, system] but is 'annotationProcessor'. @ line 26, column 20
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.zhixiang:trade-service:jar:1.0.0
+[WARNING] 'dependencies.dependency.scope' for org.projectlombok:lombok:jar must be one of [provided, compile, runtime, test, system] but is 'annotationProcessor'. @ line 26, column 20
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.zhixiang:ops-service:jar:1.0.0
+[WARNING] 'dependencies.dependency.scope' for org.projectlombok:lombok:jar must be one of [provided, compile, runtime, test, system] but is 'annotationProcessor'. @ line 26, column 20
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.zhixiang:ai-service:jar:1.0.0
+[WARNING] 'dependencies.dependency.scope' for org.projectlombok:lombok:jar must be one of [provided, compile, runtime, test, system] but is 'annotationProcessor'. @ line 26, column 20
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] restaurant-cloud                                                   [pom]
+[INFO] restaurant-common                                                  [jar]
+[INFO] 
+[INFO] -------------------< com.zhixiang:restaurant-cloud >--------------------
+[INFO] Building restaurant-cloud 1.0.0                                    [1/2]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ restaurant-cloud ---
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ restaurant-cloud ---
+[INFO] Installing C:\Users\35456\Desktop\rag\backend\pom.xml to D:\mvnrep\com\zhixiang\restaurant-cloud\1.0.0\restaurant-cloud-1.0.0.pom
+[INFO] 
+[INFO] -------------------< com.zhixiang:restaurant-common >-------------------
+[INFO] Building restaurant-common 1.0.0                                   [2/2]
+[INFO]   from restaurant-common\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ restaurant-common ---
+[INFO] Deleting C:\Users\35456\Desktop\rag\backend\restaurant-common\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ restaurant-common ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ restaurant-common ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 9 source files with javac [debug release 17] to target\classes
+[INFO] /C:/Users/35456/Desktop/rag/backend/restaurant-common/src/main/java/com/zhixiang/common/JwtUtil.java: C:\Users\35456\Desktop\rag\backend\restaurant-common\src\main\java\com\zhixiang\common\JwtUtil.java使用或覆盖了已过时的 API。
+[INFO] /C:/Users/35456/Desktop/rag/backend/restaurant-common/src/main/java/com/zhixiang/common/JwtUtil.java: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ restaurant-common ---
+[INFO] skip non existing resourceDirectory C:\Users\35456\Desktop\rag\backend\restaurant-common\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ restaurant-common ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ restaurant-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ restaurant-common ---
+[INFO] Building jar: C:\Users\35456\Desktop\rag\backend\restaurant-common\target\restaurant-common-1.0.0.jar
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ restaurant-common ---
+[INFO] Installing C:\Users\35456\Desktop\rag\backend\restaurant-common\pom.xml to D:\mvnrep\com\zhixiang\restaurant-common\1.0.0\restaurant-common-1.0.0.pom
+[INFO] Installing C:\Users\35456\Desktop\rag\backend\restaurant-common\target\restaurant-common-1.0.0.jar to D:\mvnrep\com\zhixiang\restaurant-common\1.0.0\restaurant-common-1.0.0.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for restaurant-cloud 1.0.0:
+[INFO] 
+[INFO] restaurant-cloud ................................... SUCCESS [  0.229 s]
+[INFO] restaurant-common .................................. SUCCESS [  2.525 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.195 s
+[INFO] Finished at: 2026-08-13T12:38:31+08:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhixiang.trade.mapper.CouponMapper">
+
+    <sql id="Base_Column_List">
+        id, name, type, threshold, value, total, received, used, status, create_time
+    </sql>
+
+    <select id="selectAll" resultType="com.zhixiang.trade.entity.Coupon">
+        SELECT <include refid="Base_Column_List"/> FROM coupon ORDER BY id ASC
+    </select>
+
+    <select id="selectById" resultType="com.zhixiang.trade.entity.Coupon">
+        SELECT <include refid="Base_Column_List"/> FROM coupon WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.zhixiang.trade.entity.Coupon" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO coupon (name, type, threshold, value, total, received, used, status)
+        VALUES (#{name}, #{type}, #{threshold}, #{value}, #{total}, #{received}, #{used}, #{status})
+    </insert>
+
+    <update id="update" parameterType="com.zhixiang.trade.entity.Coupon">
+        UPDATE coupon
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="type != null">type = #{type},</if>
+            <if test="threshold != null">threshold = #{threshold},</if>
+            <if test="value != null">value = #{value},</if>
+            <if test="total != null">total = #{total},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM coupon WHERE id = #{id}
+    </delete>
+</mapper>

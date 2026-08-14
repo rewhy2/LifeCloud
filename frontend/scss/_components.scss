@@ -1,0 +1,89 @@
+// ============================================================
+// Components —— 按钮 / 表单 / 徽章 / 开关 / 提示
+// ============================================================
+
+/* 表单元素 */
+.field { margin-bottom: 14px; }
+.field label { display: block; font-size: 12.5px; font-weight: 600; color: var(--ink-600); margin-bottom: 7px; }
+.input, .select, .textarea {
+  width: 100%; padding: 11px 13px; border: 1.5px solid var(--ink-200);
+  border-radius: 10px; background: var(--surface); color: var(--ink-800);
+  transition: border-color .2s, box-shadow .2s; outline: none;
+}
+.input:focus, .select:focus, .textarea:focus { border-color: var(--brand-400); box-shadow: 0 0 0 3px var(--brand-100); background: #fff; }
+.textarea { resize: vertical; min-height: 80px; }
+.input::placeholder { color: var(--ink-400); }
+
+/* 按钮 */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 11px 18px; border-radius: 10px; font-size: 14px; font-weight: 600;
+  transition: transform .12s var(--ease), box-shadow .2s, background .2s, color .2s, border-color .2s;
+  user-select: none; white-space: nowrap;
+}
+.btn:active { transform: translateY(1px) scale(.99); }
+.btn-primary { background: linear-gradient(135deg, var(--brand-500), var(--brand-600)); color: #fff; box-shadow: var(--sh-brand); }
+.btn-primary:hover { box-shadow: 0 10px 28px rgba(255,90,31,.38); }
+.btn-primary:disabled { opacity: .6; cursor: not-allowed; box-shadow: none; }
+.btn-block { width: 100%; }
+.btn-ghost { background: var(--ink-100); color: var(--ink-700); }
+.btn-ghost:hover { background: var(--ink-200); }
+.btn-outline { background: #fff; border: 1.5px solid var(--ink-200); color: var(--ink-700); }
+.btn-outline:hover { border-color: var(--brand-300); color: var(--brand-600); }
+.btn-sm { padding: 7px 12px; font-size: 12.5px; border-radius: 8px; }
+.btn-danger { background: var(--danger-bg); color: var(--danger); }
+.btn-danger:hover { background: #fbdbe0; }
+.btn-ok { background: var(--ok-bg); color: var(--ok); }
+.btn-ok:hover { background: #d3f3e6; }
+
+.link { color: var(--brand-600); font-weight: 600; cursor: pointer; }
+.link:hover { text-decoration: underline; }
+
+/* 角色切换段 / 提示 */
+.role-seg { display: flex; gap: 4px; padding: 4px; background: var(--ink-100); border-radius: 12px; margin: 22px 0 18px; }
+.role-seg .role-opt { flex: 1; text-align: center; padding: 9px 0; border-radius: 9px; font-size: 13.5px; font-weight: 600; color: var(--ink-500); cursor: pointer; transition: all .25s var(--ease); user-select: none; }
+.role-seg .role-opt:hover { color: var(--ink-700); }
+.role-seg .role-opt.active { background: var(--surface); color: var(--brand-600); box-shadow: var(--sh-1); }
+.auth-hint { display: flex; align-items: center; gap: 8px; background: var(--brand-50); color: var(--brand-700); border: 1px solid var(--brand-100); border-radius: 10px; padding: 9px 12px; font-size: 12.5px; margin-bottom: 16px; animation: fadeUp .3s var(--ease) both; }
+.auth-hint .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand-500); flex: none; }
+.auth-row { display: flex; justify-content: space-between; align-items: center; margin: 4px 0 18px; font-size: 13px; }
+.auth-switch { font-size: 13px; color: var(--ink-500); text-align: center; margin-top: 18px; }
+
+/* spinner */
+.spinner { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff; animation: spin .7s linear infinite; }
+.spinner.dark { border: 2px solid var(--ink-200); border-top-color: var(--brand-500); }
+
+/* 徽章 */
+.badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px; border-radius: 99px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.badge-ok { background: var(--ok-bg); color: var(--ok); }
+.badge-warn { background: var(--warn-bg); color: var(--warn); }
+.badge-danger { background: var(--danger-bg); color: var(--danger); }
+.badge-info { background: var(--info-bg); color: var(--info); }
+.badge-mute { background: var(--ink-100); color: var(--ink-500); }
+
+/* 行操作 */
+.row-actions { display: inline-flex; gap: 6px; }
+.row-actions .act { padding: 5px 10px; border-radius: 8px; font-size: 12.5px; font-weight: 600; transition: .15s; }
+.row-actions .act.edit { color: var(--info); background: var(--info-bg); }
+.row-actions .act.edit:hover { background: #d4e6fd; }
+.row-actions .act.del { color: var(--danger); background: var(--danger-bg); }
+.row-actions .act.del:hover { background: #fbdbe0; }
+
+/* 开关 */
+.switch { position: relative; width: 44px; height: 24px; flex: none; }
+.switch input { display: none; }
+.switch .track { position: absolute; inset: 0; background: var(--ink-200); border-radius: 99px; transition: .2s; }
+.switch .track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; background: #fff; border-radius: 50%; box-shadow: var(--sh-1); transition: .2s; }
+.switch input:checked + .track { background: var(--brand-500); }
+.switch input:checked + .track::after { transform: translateX(20px); }
+.switch-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--ink-100); }
+.switch-row:last-child { border-bottom: none; }
+.switch-row .label-txt { font-size: 13.5px; font-weight: 500; color: var(--ink-700); }
+.switch-row .label-sub { font-size: 12px; color: var(--ink-400); }
+
+/* 提示条 */
+.save-tip { display: flex; align-items: center; gap: 8px; padding: 11px 14px; border-radius: 10px; font-size: 13px; margin-bottom: 14px; animation: fadeUp .25s ease both; }
+.save-tip.ok { background: var(--ok-bg); color: var(--ok); }
+.save-tip.err { background: var(--danger-bg); color: var(--danger); }
+.save-tip .x { margin-left: auto; cursor: pointer; opacity: .7; }

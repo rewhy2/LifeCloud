@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhixiang.trade.mapper.OrderMapper">
+
+    <sql id="Base_Column_List">
+        id, order_no, table_no, amount, pay_type, status, item_count, member_phone, username, create_time
+    </sql>
+
+    <insert id="insert" parameterType="com.zhixiang.trade.entity.Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO orders (order_no, table_no, amount, pay_type, status, item_count, member_phone, username)
+        VALUES (#{orderNo}, #{tableNo}, #{amount}, #{payType}, #{status}, #{itemCount}, #{memberPhone}, #{username})
+    </insert>
+
+    <insert id="insertItem" parameterType="com.zhixiang.trade.entity.OrderItem">
+        INSERT INTO order_item (order_id, product_id, name, price, quantity)
+        VALUES (#{orderId}, #{productId}, #{name}, #{price}, #{quantity})
+    </insert>
+
+    <update id="updateStatus">
+        UPDATE orders SET status = #{status} WHERE order_no = #{orderNo}
+    </update>
+
+    <select id="selectById" resultType="com.zhixiang.trade.entity.Order">
+        SELECT <include refid="Base_Column_List"/> FROM orders WHERE id = #{id}
+    </select>
+
+    <select id="selectByOrderNo" resultType="com.zhixiang.trade.entity.Order">
+        SELECT <include refid="Base_Column_List"/> FROM orders WHERE order_no = #{orderNo}
+    </select>
+
+    <select id="selectList" resultType="com.zhixiang.trade.entity.Order">
+        SELECT <include refid="Base_Column_List"/>
+        FROM orders
+        <where>
+            <if test="status != null and status != ''">AND status = #{status}</if>
+            <if test="memberPhone != null and memberPhone != ''">AND member_phone = #{memberPhone}</if>
+            <if test="start != null and start != ''">AND create_time &gt;= #{start}</if>
+            <if test="end != null and end != ''">AND create_time &lt;= #{end}</if>
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <select id="selectItemsByOrderId" resultType="com.zhixiang.trade.entity.OrderItem">
+        SELECT id, order_id, product_id, name, price, quantity
+        FROM order_item WHERE order_id = #{orderId}
+    </select>
+</mapper>

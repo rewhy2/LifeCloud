@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhixiang.trade.mapper.CategoryMapper">
+
+    <sql id="Base_Column_List">
+        id, name, sort, create_time
+    </sql>
+
+    <select id="selectAll" resultType="com.zhixiang.trade.entity.Category">
+        SELECT <include refid="Base_Column_List"/>
+        FROM category ORDER BY sort ASC, id ASC
+    </select>
+
+    <insert id="insert" parameterType="com.zhixiang.trade.entity.Category" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO category (name, sort) VALUES (#{name}, #{sort})
+    </insert>
+
+    <update id="update" parameterType="com.zhixiang.trade.entity.Category">
+        UPDATE category
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="sort != null">sort = #{sort},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM category WHERE id = #{id}
+    </delete>
+</mapper>

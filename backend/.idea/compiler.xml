@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for restaurant-cloud" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="D:/mvnrep/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="restaurant-common" />
+        <module name="auth-service" />
+        <module name="ops-service" />
+        <module name="ai-service" />
+        <module name="gateway-service" />
+        <module name="trade-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ai-service" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="ops-service" options="-parameters" />
+      <module name="restaurant-common" options="-parameters" />
+      <module name="restaurant-platform" options="" />
+      <module name="trade-service" options="-parameters" />
+    </option>
+  </component>
+</project>

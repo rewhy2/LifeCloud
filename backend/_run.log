@@ -1,0 +1,552 @@
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] Unrecognised tag: 'mirror' (position: START_TAG seen ... the preferred\n   | server for that repository.\n   |-->\n  <mirror>... @148:11)  @ D:\apache-maven-3.9.14\conf\settings.xml, line 148, column 11
+[WARNING] 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.zhixiang:restaurant-platform >------------------
+[INFO] Building ÷«œÌ≤Õ“˚π‹¿Ì∆ΩÃ® 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ restaurant-platform >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ restaurant-platform ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 66 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ restaurant-platform ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 86 source files with javac [debug release 17] to target\classes
+[INFO] /C:/Users/35456/Desktop/rag/backend/src/main/java/com/zhixiang/restaurant/ai/AiChatService.java: ƒ≥–© ‰»ÎŒƒº˛ π”√ªÚ∏≤∏«¡À“—π˝ ±µƒ API°£
+[INFO] /C:/Users/35456/Desktop/rag/backend/src/main/java/com/zhixiang/restaurant/ai/AiChatService.java: ”–πÿœÍœ∏–≈œ¢, «Î π”√ -Xlint:deprecation ÷ÿ–¬±‡“Î°£
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ restaurant-platform ---
+[INFO] skip non existing resourceDirectory C:\Users\35456\Desktop\rag\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ restaurant-platform ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ restaurant-platform <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ restaurant-platform ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-08-05T10:01:17.759+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] c.z.restaurant.RestaurantApplication     : Starting RestaurantApplication using Java 17.0.9 with PID 25356 (C:\Users\35456\Desktop\rag\backend\target\classes started by 35456 in C:\Users\35456\Desktop\rag\backend)
+2026-08-05T10:01:17.759+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] c.z.restaurant.RestaurantApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:01:18.284+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-08-05T10:01:18.284+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-08-05T10:01:18.308+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-08-05T10:01:18.618+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] org.reflections.Reflections              : Reflections took 98 ms to scan 1 urls, producing 15 keys and 86 values
+2026-08-05T10:01:18.960+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-08-05T10:01:18.975+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:01:18.975+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-08-05T10:01:19.006+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-05T10:01:19.006+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1221 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5a6aa0] was not registered for synchronization because synchronization is not active
+2026-08-05T10:01:19.823+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:01:19.948+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f4501de
+2026-08-05T10:01:19.948+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1755247389 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, category, title, content, create_time FROM knowledge_doc ORDER BY id ASC
+==> Parameters: 
+<==    Columns: id, category, title, content, create_time
+<==        Row: 1, RULE, ”™“µ ±º‰πÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 2, RULE, ≤À∆∑…œœ¬º‹πÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 3, RULE, ÕÀµ•”ÎÕÀøÓπÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 4, RULE, ”™œ˙µ˜”≈Ω®“ÈπÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 5, RULE, ø‚¥Ê”Î≤…π∫πÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 6, RULE, ≈≈∞‡”Î»À¡¶πÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 7, COMPLAINT, øÕÀﬂ-…œ≤À¬˝, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 8, COMPLAINT, øÕÀﬂ-≤À∆∑∆´œÃ, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 9, COMPLAINT, øÕÀﬂ-¬©µ•¥Ìµ•, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 10, COMPLAINT, øÕÀﬂ-ª·‘±»®“Ê, <<BLOB>>, 2026-08-03 10:38:48
+<==        Row: 11, RULE, “Ï≥£æ≠”™’Ô∂œπÊ‘Ú, <<BLOB>>, 2026-08-03 10:38:48
+<==      Total: 11
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d5a6aa0]
+2026-08-05T10:01:20.390+08:00  WARN 25356 --- [zhixiang-restaurant] [           main] dev.langchain4j.internal.RetryUtils      : Exception was thrown on attempt 1 of 3
+
+dev.ai4j.openai4j.OpenAiHttpException: {"error":{"message":"Authentication Fails, Your api key: ****-key is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+	at dev.ai4j.openai4j.Utils.toException(Utils.java:8) ~[openai4j-0.17.0.jar:na]
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:28) ~[openai4j-0.17.0.jar:na]
+	at dev.ai4j.openai4j.RequestExecutor.execute(RequestExecutor.java:59) ~[openai4j-0.17.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.lambda$embedTexts$0(OpenAiEmbeddingModel.java:106) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192) ~[langchain4j-core-0.31.0.jar:na]
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229) ~[langchain4j-core-0.31.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.embedTexts(OpenAiEmbeddingModel.java:106) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.embedAll(OpenAiEmbeddingModel.java:94) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.model.embedding.EmbeddingModel.embed(EmbeddingModel.java:34) ~[langchain4j-core-0.31.0.jar:na]
+	at com.zhixiang.restaurant.ai.RagKnowledgeService.loadAndIndex(RagKnowledgeService.java:98) ~[classes/:na]
+	at com.zhixiang.restaurant.ai.RagKnowledgeService.init(RagKnowledgeService.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.zhixiang.restaurant.RestaurantApplication.main(RestaurantApplication.java:14) ~[classes/:na]
+
+2026-08-05T10:01:21.091+08:00  WARN 25356 --- [zhixiang-restaurant] [           main] dev.langchain4j.internal.RetryUtils      : Exception was thrown on attempt 2 of 3
+
+dev.ai4j.openai4j.OpenAiHttpException: {"error":{"message":"Authentication Fails, Your api key: ****-key is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+	at dev.ai4j.openai4j.Utils.toException(Utils.java:8) ~[openai4j-0.17.0.jar:na]
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:28) ~[openai4j-0.17.0.jar:na]
+	at dev.ai4j.openai4j.RequestExecutor.execute(RequestExecutor.java:59) ~[openai4j-0.17.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.lambda$embedTexts$0(OpenAiEmbeddingModel.java:106) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192) ~[langchain4j-core-0.31.0.jar:na]
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229) ~[langchain4j-core-0.31.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.embedTexts(OpenAiEmbeddingModel.java:106) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.model.openai.OpenAiEmbeddingModel.embedAll(OpenAiEmbeddingModel.java:94) ~[langchain4j-open-ai-0.31.0.jar:na]
+	at dev.langchain4j.model.embedding.EmbeddingModel.embed(EmbeddingModel.java:34) ~[langchain4j-core-0.31.0.jar:na]
+	at com.zhixiang.restaurant.ai.RagKnowledgeService.loadAndIndex(RagKnowledgeService.java:98) ~[classes/:na]
+	at com.zhixiang.restaurant.ai.RagKnowledgeService.init(RagKnowledgeService.java:53) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.zhixiang.restaurant.RestaurantApplication.main(RestaurantApplication.java:14) ~[classes/:na]
+
+2026-08-05T10:01:21.954+08:00  WARN 25356 --- [zhixiang-restaurant] [           main] c.z.restaurant.ai.RagKnowledgeService    : RAG ÷™ ∂ø‚≥ı ºªØ ß∞‹£¨“—Ωµº∂Œ™≤ªø…”√£®≤ª”∞œÏ∆‰À˚π¶ƒ‹£©£∫dev.ai4j.openai4j.OpenAiHttpException: {"error":{"message":"Authentication Fails, Your api key: ****-key is invalid","type":"authentication_error","param":null,"code":"invalid_request_error"}}
+2026-08-05T10:01:22.219+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-08-05T10:01:22.515+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-08-05T10:01:22.531+08:00  INFO 25356 --- [zhixiang-restaurant] [           main] c.z.restaurant.RestaurantApplication     : Started RestaurantApplication in 5.08 seconds (process running for 5.315)
+SchemaInitRunner skip: StatementCallback; bad SQL grammar [ALTER TABLE product ADD COLUMN image VARCHAR(512) DEFAULT '' COMMENT '≤À∆∑Õº∆¨URL' AFTER description]
+SchemaInitRunner skip: StatementCallback; bad SQL grammar [ALTER TABLE sys_user ADD COLUMN status INT DEFAULT 1 COMMENT '1∆Ù”√0Ω˚”√' AFTER role]
+SchemaInitRunner skip: StatementCallback; bad SQL grammar [ALTER TABLE orders ADD COLUMN member_phone VARCHAR(32) DEFAULT '' COMMENT 'πÀøÕ ÷ª˙∫≈']
+SchemaInitRunner skip: StatementCallback; bad SQL grammar [ALTER TABLE orders ADD COLUMN username VARCHAR(64) DEFAULT '' COMMENT 'œ¬µ•πÀøÕ”√ªß√˚']
+2026-08-05T10:02:03.461+08:00  INFO 25356 --- [zhixiang-restaurant] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:02:03.461+08:00  INFO 25356 --- [zhixiang-restaurant] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:02:03.476+08:00  INFO 25356 --- [zhixiang-restaurant] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cadf461] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1812671037 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, sort, create_time FROM category ORDER BY sort ASC, id ASC
+==> Parameters: 
+<==    Columns: id, name, sort, create_time
+<==        Row: 1, »»œ˙’–≈∆, 1, 2026-08-03 10:38:48
+<==        Row: 2, ’–≈∆÷˜≤À, 2, 2026-08-03 10:38:48
+<==        Row: 3, À¨ø⁄¡π≤À, 3, 2026-08-03 10:38:48
+<==        Row: 4, ÷˜ ≥Ã¿∆∑, 4, 2026-08-03 10:38:48
+<==        Row: 5, æ∆ÀÆ“˚¡œ, 5, 2026-08-03 10:38:48
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1cadf461]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54f79090] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@130430890 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54f79090]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a37c3e1] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@110789603 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT * FROM sys_user WHERE username = ?
+==> Parameters: merchant(String)
+<==    Columns: id, username, password, nick_name, role, status, create_time
+<==        Row: 2, merchant, a52f2c0dbf38ade4f715e02c7124046e,  æ¿˝…Ãº“, MERCHANT, 1, 2026-08-04 14:05:13
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a37c3e1]
+2026-08-05T10:03:10.104+08:00 ERROR 25356 --- [zhixiang-restaurant] [nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50510733] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@991906650 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product ORDER BY id DESC
+==> Parameters: 
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50510733]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2783a6a9] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1093527177 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f53e8eb] will not be managed by Spring
+==>  Preparing: SELECT id, name, sort, create_time FROM category ORDER BY sort ASC, id ASC
+==> Parameters: 
+<==    Columns: id, name, sort, create_time
+<==        Row: 1, »»œ˙’–≈∆, 1, 2026-08-03 10:38:48
+<==        Row: 2, ’–≈∆÷˜≤À, 2, 2026-08-03 10:38:48
+<==        Row: 3, À¨ø⁄¡π≤À, 3, 2026-08-03 10:38:48
+<==        Row: 4, ÷˜ ≥Ã¿∆∑, 4, 2026-08-03 10:38:48
+<==        Row: 5, æ∆ÀÆ“˚¡œ, 5, 2026-08-03 10:38:48
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2783a6a9]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14764285] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1201643463 wrapping com.mysql.cj.jdbc.ConnectionImpl@37d6f507] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product ORDER BY id DESC
+==> Parameters: 
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@14764285]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13fc3954] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1322897182 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, sort, create_time FROM category ORDER BY sort ASC, id ASC
+==> Parameters: 
+<==    Columns: id, name, sort, create_time
+<==        Row: 1, »»œ˙’–≈∆, 1, 2026-08-03 10:38:48
+<==        Row: 2, ’–≈∆÷˜≤À, 2, 2026-08-03 10:38:48
+<==        Row: 3, À¨ø⁄¡π≤À, 3, 2026-08-03 10:38:48
+<==        Row: 4, ÷˜ ≥Ã¿∆∑, 4, 2026-08-03 10:38:48
+<==        Row: 5, æ∆ÀÆ“˚¡œ, 5, 2026-08-03 10:38:48
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13fc3954]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fe9c154] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@162496831 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, type, threshold, value, total, received, used, status, create_time FROM coupon ORDER BY id ASC
+==> Parameters: 
+<==    Columns: id, name, type, threshold, value, total, received, used, status, create_time
+<==        Row: 1, ¬˙50ºı10, FULL_REDUCE, 50.00, 10.00, 500, 321, 180, 1, 2026-08-03 10:38:48
+<==        Row: 2, ¬˙100ºı30, FULL_REDUCE, 100.00, 30.00, 300, 150, 90, 1, 2026-08-03 10:38:48
+<==        Row: 3, ŒÁ –88’€, DISCOUNT, 0.00, 0.88, 200, 80, 40, 1, 2026-08-03 10:38:48
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fe9c154]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f1fce58] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1373125579 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, contact, phone, category, create_time FROM supplier ORDER BY id ASC
+==> Parameters: 
+<==    Columns: id, name, contact, phone, category, create_time
+<==        Row: 1, œ ∑·≈©≤˙∆∑, ÷‹æ≠¿Ì, 13900000001,  ﬂ≤À…˙œ , 2026-08-03 10:38:48
+<==        Row: 2, »‚¡™”≈—°, Œ‚æ≠¿Ì, 13900000002, »‚«›µ∞¿‡, 2026-08-03 10:38:48
+<==        Row: 3, µ˜Œ∂∆∑◊‹≤÷, ÷£æ≠¿Ì, 13900000003, µ˜¡œ∏…ªı, 2026-08-03 10:38:48
+<==      Total: 3
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f1fce58]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ddacc54] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1174410639 wrapping com.mysql.cj.jdbc.ConnectionImpl@37d6f507] will not be managed by Spring
+==>  Preparing: SELECT * FROM sys_user WHERE username = ?
+==> Parameters: merchant(String)
+<==    Columns: id, username, password, nick_name, role, status, create_time
+<==        Row: 2, merchant, a52f2c0dbf38ade4f715e02c7124046e,  æ¿˝…Ãº“, MERCHANT, 1, 2026-08-04 14:05:13
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ddacc54]
+2026-08-05T10:03:36.858+08:00 ERROR 25356 --- [zhixiang-restaurant] [nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis] with root cause
+
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[na:na]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.109.Final.jar:4.1.109.Final]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10e531f0] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@824787130 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT * FROM sys_user WHERE username = ?
+==> Parameters: demo_customer(String)
+<==    Columns: id, username, password, nick_name, role, status, create_time
+<==        Row: 3, demo_customer, e10adc3949ba59abbe56e057f20f883e, πÀøÕ æ¿˝, USER, 1, 2026-08-04 14:05:13
+<==      Total: 1
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10e531f0]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bb5dec] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@131718926 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, sort, create_time FROM category ORDER BY sort ASC, id ASC
+==> Parameters: 
+<==    Columns: id, name, sort, create_time
+<==        Row: 1, »»œ˙’–≈∆, 1, 2026-08-03 10:38:48
+<==        Row: 2, ’–≈∆÷˜≤À, 2, 2026-08-03 10:38:48
+<==        Row: 3, À¨ø⁄¡π≤À, 3, 2026-08-03 10:38:48
+<==        Row: 4, ÷˜ ≥Ã¿∆∑, 4, 2026-08-03 10:38:48
+<==        Row: 5, æ∆ÀÆ“˚¡œ, 5, 2026-08-03 10:38:48
+<==      Total: 5
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bb5dec]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49190cdd] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1892339391 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49190cdd]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@be5e3f3] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@317774057 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@be5e3f3]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39735e97] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1971330748 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f53e8eb] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@39735e97]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bdb0b4e] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1978861580 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bdb0b4e]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@168aceef] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2000798810 wrapping com.mysql.cj.jdbc.ConnectionImpl@37d6f507] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@168aceef]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf2628c] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@2125234860 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf2628c]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a344378] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@75755801 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f53e8eb] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2a344378]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bb3490d] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@1075871811 wrapping com.mysql.cj.jdbc.ConnectionImpl@37d6f507] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bb3490d]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33e068ae] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@868348147 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33e068ae]
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e155a63] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@671586692 wrapping com.mysql.cj.jdbc.ConnectionImpl@5f4501de] will not be managed by Spring
+==>  Preparing: SELECT id, name, category_id, price, cost, status, description, image, sales_count, create_time FROM product WHERE status = ? ORDER BY id DESC
+==> Parameters: 1(Integer)
+<==    Columns: id, name, category_id, price, cost, status, description, image, sales_count, create_time
+<==        Row: 9, ?????, 1, 18.00, null, 1, null, https://example.com/x.png, 13, 2026-08-04 10:45:58
+<==        Row: 8, ◊œ≤Àµ∞ª®Ã¿, 4, 10.00, 3.00, 1, ≈ØŒ∏∫√Ã¿, , 18, 2026-08-03 10:38:48
+<==        Row: 7, À·¿±Õ¡∂πÀø, 3, 16.00, 5.00, 1, º“≥£æ≠µ‰, , 12, 2026-08-03 10:38:48
+<==        Row: 6, ÀÆ÷Û”„, 2, 78.00, 40.00, 1, œ ƒ€¬È¿±, , 18, 2026-08-03 10:38:48
+<==        Row: 5, ø…¿÷, 5, 6.00, 2.50, 1, ±˘’Ú≥©“˚, , 15, 2026-08-03 10:38:48
+<==        Row: 4, √◊∑π, 4, 2.00, 0.80, 1, ∂´±±’‰÷È√◊, , 18, 2026-08-03 10:38:48
+<==        Row: 3, ¡π∞Ëª∆πœ, 3, 12.00, 4.00, 1, «ÂÀ¨Ω‚ƒÂ, , 26, 2026-08-03 10:38:48
+<==        Row: 2, π¨±£º¶∂°, 2, 38.00, 16.00, 1, À·ÃŒ¢¿±£¨œ¬∑π…Ò∆˜, , 18, 2026-08-03 10:38:48
+<==        Row: 1, ¬È¿±œ„π¯, 2, 68.00, 32.00, 1, æ≠µ‰¥®Œ∂£¨¬È¿±œ œ„, , 21, 2026-08-03 10:38:48
+<==      Total: 9
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4e155a63]

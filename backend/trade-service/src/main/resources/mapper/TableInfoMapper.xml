@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhixiang.trade.mapper.TableInfoMapper">
+
+    <sql id="Base_Column_List">
+        id, no, seats, area, status, create_time
+    </sql>
+
+    <select id="selectAll" resultType="com.zhixiang.trade.entity.TableInfo">
+        SELECT <include refid="Base_Column_List"/> FROM table_info
+        <where>
+            <if test="status != null and status != ''">AND status = #{status}</if>
+            <if test="area != null and area != ''">AND area = #{area}</if>
+        </where>
+        ORDER BY no ASC
+    </select>
+
+    <select id="selectById" resultType="com.zhixiang.trade.entity.TableInfo">
+        SELECT <include refid="Base_Column_List"/> FROM table_info WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.zhixiang.trade.entity.TableInfo" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO table_info (no, seats, area, status) VALUES (#{no}, #{seats}, #{area}, #{status})
+    </insert>
+
+    <update id="update" parameterType="com.zhixiang.trade.entity.TableInfo">
+        UPDATE table_info
+        <set>
+            <if test="no != null">no = #{no},</if>
+            <if test="seats != null">seats = #{seats},</if>
+            <if test="area != null">area = #{area},</if>
+            <if test="status != null">status = #{status},</if>
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="long">
+        DELETE FROM table_info WHERE id = #{id}
+    </delete>
+</mapper>
