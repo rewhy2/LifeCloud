@@ -3,8 +3,8 @@ package com.zhixiang.auth.service;
 import com.zhixiang.auth.dto.SysUserDTO;
 import com.zhixiang.auth.entity.User;
 import com.zhixiang.auth.mapper.UserMapper;
+import com.zhixiang.common.security.PasswordEncoderUtil;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -41,7 +41,7 @@ public class AdminService {
         }
         User u = new User();
         u.setUsername(dto.getUsername());
-        u.setPassword(DigestUtils.md5DigestAsHex((dto.getPassword() == null ? "123456" : dto.getPassword()).getBytes()));
+        u.setPassword(PasswordEncoderUtil.encode(dto.getPassword() == null ? "123456" : dto.getPassword()));
         u.setNickName(dto.getNickName() == null ? dto.getUsername() : dto.getNickName());
         u.setRole(dto.getRole());
         u.setStatus(dto.getStatus() == null ? 1 : dto.getStatus());
@@ -67,6 +67,6 @@ public class AdminService {
     }
 
     public void resetPassword(Long id) {
-        userMapper.updatePassword(id, DigestUtils.md5DigestAsHex("123456".getBytes()));
+        userMapper.updatePassword(id, PasswordEncoderUtil.encode("123456"));
     }
 }
