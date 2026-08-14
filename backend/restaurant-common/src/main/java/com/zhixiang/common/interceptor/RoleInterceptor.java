@@ -52,7 +52,7 @@ public class RoleInterceptor implements HandlerInterceptor {
 
     private boolean deny(HttpServletResponse response, String msg) throws IOException {
         response.setContentType("application/json;charset=UTF-8");
-        response.setStatus(HttpServletResponse.SC_OK);
+        response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         response.getWriter().write(objectMapper.writeValueAsString(Result.error(403, msg)));
         return false;
     }
