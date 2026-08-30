@@ -17,4 +17,14 @@ public interface UserCouponMapper {
 
     @Select("SELECT COUNT(1) FROM user_coupon WHERE user_id = #{userId} AND coupon_id = #{couponId}")
     int countByUserAndCoupon(@Param("userId") Long userId, @Param("couponId") Long couponId);
+
+    @Select("SELECT * FROM user_coupon WHERE id = #{id}")
+    UserCoupon selectById(@Param("id") Long id);
+
+    /** 标记优惠券已使用（仅当仍为未使用状态时生效，返回受影响行数）。 */
+    @Update("UPDATE user_coupon SET status = 2 WHERE id = #{id} AND status = 1")
+    int markUsed(@Param("id") Long id);
+
+    @Select("SELECT * FROM user_coupon WHERE id = #{id} AND user_id = #{userId} AND status = 1")
+    UserCoupon selectOwnedUnused(@Param("id") Long id, @Param("userId") Long userId);
 }
